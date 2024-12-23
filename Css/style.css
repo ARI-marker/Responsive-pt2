@@ -1,0 +1,138 @@
+/*Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) 
+ 
+Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) 
+ 
+Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) 
+ 
+Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) 
+ 
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) */
+/*@media(min-width:600px){
+    body{
+        background-color: darkblue;
+        color: white;
+    }
+}*/
+
+
+@media all and (max-width:600px){
+    body {
+        background-color:darkblue;
+        color:white;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .navbar .nav-links {
+      display: none; /* Hide nav links initially */
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar .nav-links.active {
+      display: block; /* Show links when hamburger is clicked */
+    }
+  
+    .navbar .nav-links li {
+      margin: 20px 0;
+    }
+  
+    
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .navbar .nav-links {
+      display: flex; /* Show nav links horizontally */
+    }
+  
+
+  }
+  /* Default styles for mobile devices */
+body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      font-size: 16px; /* Increase font size for larger screens */
+      padding: 20px; 
+      background-color: #333;  /* Add more padding for larger screens */
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between; /* Adjust layout for larger screens */
+    }
+  
+    .sidebar {
+      width: 30%; /* Adjust sidebar width */
+    }
+  
+    .main-content {
+      width: 65%; /* Adjust main content width */
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    body {
+      font-size: 18px; /* Larger font size for very large screens */
+      padding: 30px;  
+      background-color: red; /* More padding for extra large screens */
+    }
+}
+  
